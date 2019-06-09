@@ -1,7 +1,7 @@
 # Site settings
 title: Meng Ye
-SEOTitle: 路遥知马力 日久见人心 | BY Blog
-header-img: 
+SEOTitle: 孟烨的博客 | BY Blog
+header-img: img/header-img.jpg
 email: mengyezdf@163.com
 description: "Stay hungry,Stay foolish!."
 keyword: "BY, BY Blog, 孟烨的博客, Meng Ye, 孟烨, iOS, Apple, iPhone"
@@ -100,6 +100,6 @@ service-worker: true
 friends: [
     {
         title: "张丹峰",
-        href: ""
+        href: "https://zdfccdanfeng.github.io/"
     }
 ]
