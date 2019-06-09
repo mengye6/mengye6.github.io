@@ -98,8 +98,4 @@ service-worker: true
 
 # Friends
 friends: [
-    {
-        title: "张丹峰",
-        href: "https://zdfccdanfeng.github.io/"
-    }
 ]
