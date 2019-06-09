@@ -62,8 +62,8 @@ kramdown:
 # Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
-  clientID: Iv1.4054a8b06363d908                            #生成的clientID
-  clientSecret: 5027ecb26c8fe9e594f08d859db7b7def3493746    #生成的clientSecret
+  clientID: ab6416187395fe15a283                            #生成的clientID
+  clientSecret: 4f340992086d331c316b6b86cd6c573d0bf50e22    #生成的clientSecret
   repo: mengye6.github.io    #仓库名称
   owner: mengye6    #github用户名
   admin: mengye6
@@ -71,6 +71,7 @@ gitalk:
 
 
 # 统计
+
 
 # Analytics settings
 # Baidu Analytics
