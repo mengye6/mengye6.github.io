@@ -1,0 +1,39 @@
+```java
+ class Solution {
+    
+    private List<List<String>> resList = new ArrayList<>();
+    private List<String> tmpList = new ArrayList<>();
+    
+    public List<List<String>> partition(String s) {
+        if (s.length() == 0 || s.isEmpty()) {
+            List<String> ttmp = new ArrayList<>();
+            ttmp.addAll(tmpList);
+            resList.add(ttmp);
+            if (!tmpList.isEmpty()) {
+                tmpList.remove(tmpList.size() - 1);
+            }
+            return resList;
+        }
+        for (int i = 1;i <= s.length();i++){
+            if (huiwen(s.substring(0,i))) {
+                tmpList.add(s.substring(0,i));
+                partition(s.substring(i,s.length()));
+            }
+        }
+        if (!tmpList.isEmpty()) {
+            tmpList.remove(tmpList.size() - 1);
+        }
+        return resList;
+    }
+    
+    private boolean huiwen(String str) {
+        int length = str.length();
+        for (int i = 0; i < length / 2; i++) {
+            if (str.toCharArray()[i] != str.toCharArray()[length - i - 1]) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+```
