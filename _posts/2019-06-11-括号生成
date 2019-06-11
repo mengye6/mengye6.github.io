@@ -1,0 +1,31 @@
+```java
+  class Solution {
+    
+    private List<String> resList = new ArrayList<>();
+    
+    public List<String> generateParenthesis(int n) {
+        if (n <= 0){
+            return resList;
+        }
+        check(n,n,"");
+        return resList;
+    }
+    
+    private void check(int left, int right, String str) {
+
+        if (left == 0) {
+            while (right-- > 0) {
+                str += ")";
+            }
+            resList.add(str);
+            return;
+        }
+        if (left >= right) {
+            check(left - 1,right,str + "(");
+        }
+        if (left < right) {
+            check(left - 1,right,str + "(");
+            check(left,right - 1,str + ")");
+        }
+    }
+}
